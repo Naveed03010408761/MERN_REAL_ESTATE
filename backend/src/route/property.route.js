@@ -5,9 +5,9 @@ import {
   getPropertyById, 
   updateProperty, 
   deleteProperty 
-} from '../controllers/property.controller.js';
-import { verifyJWT } from '../middlewares/verifyJWT.js';
-import { restrictTo } from '../middlewares/restrictTo.js';
+} from '../controller/property.controller.js';
+import { verifyJWT } from '../middleware/auth.middleware.js';
+import { restrictTo } from '../middleware/restrictTo.js';
 
 const router = express.Router();
 
